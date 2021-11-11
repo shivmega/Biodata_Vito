@@ -11,6 +11,9 @@
             padding-top: 100px;
             background-color: rgb(247, 207, 97);
         }
+        #contact{
+          background-color: rgb(255, 255, 51);
+        }
     </style>
     <title>CV Vito Megataruna</title>
     </head>
@@ -122,11 +125,63 @@
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
                   </div>
                 </div>
-              </div>
+            <br><br><br>
+                <hr>    
+            </div>
+              
         </div>
-<br><br><br>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFF33" fill-opacity="1" d="M0,192L20,197.3C40,203,80,213,120,181.3C160,149,200,75,240,58.7C280,43,320,85,360,106.7C400,128,440,128,480,160C520,192,560,256,600,277.3C640,299,680,277,720,229.3C760,181,800,107,840,64C880,21,920,11,960,53.3C1000,96,1040,192,1080,202.7C1120,213,1160,139,1200,96C1240,53,1280,43,1320,53.3C1360,64,1400,96,1420,112L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+        <section id="contact" >
+          <div class="container aos-init aos-animate" style="background-color:rgb(255, 255, 51);" data-aos="fade-up">
+            <div class="row text-center">
+              <div class="col">
+                <h2>How About You</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form name="Comment" onsubmit="return cek()">
+                  <div class="mb-3">
+                    <input type="text" class="form-control item" id="name" placeholder="Your Name" name="full name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control item" id="email" placeholder="Your Email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control item" id="pesan" rows="3" placeholder="About You" name="message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-warning">Submit</button>
+                  </button>
+                </form>
+              </div>
+              </section>
         <footer class="text-light text-center p-3" style="background-color:darkslategrey;" >
-            <p>Created By <a href="https://www.instagram.com/terlihatvito?r=nametag" class="text-light fw-bold">Vito Megataruna</a></p>
+        <p>Created By <a href="https://www.instagram.com/terlihatvito?r=nametag" class="text-light fw-bold">Vito Megataruna</a></p>
         </footer>
+      <script language="javascript">
+      function cek(){
+      if(document.Comment.email.value=="" && document.Comment.nama.value==""){
+        document.Comment.nama.focus();
+        return false;
+      }else if(document.Comment.nama.value==""){
+        document.Comment.nama.focus();
+        return false;
+      }else if(document.Comment.email.value==""){
+        document.Comment.email.focus();
+        return false;
+      }else if(document.Comment.sandi.value==""){
+        document.Comment.sandi.focus();
+        return false;
+      }else{
+        return true;
+      }
+      }
+
+    function FocusOnInput(){
+      document.Comment.nama.focus();
+    }
+      </script>
     </body>
+    
 </html>
